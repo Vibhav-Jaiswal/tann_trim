@@ -21,7 +21,7 @@ const Home = () => {
       : products.filter((product) => product.category === selectedCategory);
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black text-white">
       <Navbar />
       <Category
         selectedCategory={selectedCategory}

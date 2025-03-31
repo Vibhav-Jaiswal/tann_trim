@@ -40,14 +40,14 @@ const Carousel = () => {
   };
 
   return (
-    <div className="py-6">
+    <div className="py-6 overflow-hidden">
       <Slider {...settings}>
         {categoryItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center text-center"
+            className="py-2 h-32 w-32"
           >
-            <img src={item.icon} alt={item.name} className="h-28 w-28" />
+            <img src={item.icon} alt={item.name} className="w-full h-full object-contain" />
           </div>
         ))}
       </Slider>
